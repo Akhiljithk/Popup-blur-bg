@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POP-UP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container" id="blur">
+		<div class="content">
+			<h2>
+				Attack on Titan season 4 new episode is out
+			</h2>
+			<img class="content-img" src="1091212.jpg">
+			<a class="btn" onclick="toggle()" class="">Read more</a>
+		</div>
+	</div>
+	<div id="pop-up">
+		<h2>Attack on Titan season 4 new episode is out</h2>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+			scrambled it to make a type specimen book.
+		</p>
+		<a class="btn" onclick="toggle()" class="">Close</a>
+	</div>
+	<script type="text/javascript">
+		function toggle() {
+			var blur = document.getElementById('blur');
+			blur.classList.toggle('active')
+			var popup = document.getElementById('pop-up');
+			popup.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
