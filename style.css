@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: ;
+	background: rgb(255, 245, 108);
 	transition: 0.5s;
 	padding: 20px;
 
@@ -38,8 +38,13 @@
 	margin-top: 20px;
 	text-decoration: none;
 	color: #fff;
-	background: #111;
+	background: rgb(31, 31, 31);
 	cursor: pointer;
+	/* transition-delay: 0.5s; */
+	transition: 0.5s;
+}
+.btn:hover{
+	background: rgb(214, 62, 62);
 }
 .container#blur.active{
 	filter: blur(20px);
